@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <script src="./libraries/jquery-2.2.4.min.js"></script>
         <script src="./libraries/angular1_6_1.min.js"></script>
         <script src="./libraries/angular-ui-router.min.js"></script>
         <script src="./libraries/bootstrap.min.js"></script>
         <link href="./libraries/bootstrap-theme.min.css" rel="stylesheet"></link>
-        <link href="./libraries/main.css"></link>
+        <link href="./libraries/main.css" rel="stylesheet"></link>
         <script src="./scripts/main.js"></script>
     </head>
     
@@ -13,10 +14,14 @@
     <body ng-app="barbersiteApp">
         <div id="header">Barbershop</div>
         
+        <ul>
+            <li> <a ui-sref="home">Home</a></li>
+            <li><a ui-sref="test2">Test 2</a></li>
+        </ul>
         <h1>Hi, I am before the router</h1>
         <div ui-view></div>
         
-        <div id="footer"></div>
+        <!--<div id="footer"></div>-->
         
     </body>
     
