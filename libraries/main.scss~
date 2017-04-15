@@ -1,0 +1,89 @@
+#test2
+{
+
+}
+
+body
+{
+    background-image:url("../images/sampleimage.jpg");
+    //background-color:black;
+}
+
+body
+{
+    //color:orange;
+    
+}
+
+.ui_view
+{
+    //text-align:center;
+    border: 1px solid black;
+    height: 800px;
+    background: white;
+}
+
+.menu
+{
+    //border: 2px solid black;
+    list-style-type: none;
+
+    li
+    {
+        font-size: 20px;
+        letter-spacing: 10px;
+        color:white;
+    }
+}
+
+//above are the general rules, underneath override for specific widths
+
+//smaller than xs
+@media only screen and (max-width:479px) and (min-width:0px)
+{
+    .ui_view
+    {
+        max-width:329px;
+    }
+}
+
+//only xs
+@media only screen and (max-width:767) and (min-width:480px)
+{
+    .ui_view
+    {
+        max-width:500px;
+    }
+
+}
+
+//768 and up small
+@media only and (min-width:768px)
+{
+    .ui_view
+    {
+        max-width:700px;
+    }
+
+}
+
+
+//768 and up, medium
+@media only and (min-width:992px)
+{
+    .ui_view
+    {
+        max-width:900px;
+    }
+
+}
+
+//large
+@media only and (min-width:1200px)
+{
+    .ui_view
+    {
+        max-width:1200px;
+    }
+
+}

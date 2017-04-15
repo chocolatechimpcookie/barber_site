@@ -6,14 +6,20 @@ angular.module('barbersiteApp', ['ui.router'])
         .state(
         'home',
         {
-            url:'/',
-            templateUrl:'views/test1.html'
+            url:'/about',
+            templateUrl:'views/about.html'
         })
         
-        .state('test2',
+        .state('services',
         {
-            url:'/test2',
-            templateUrl:'views/test2.html'
+            url:'/services',
+            templateUrl:'views/services.html'
         })
+        
+        //.state('contact',
+        //{
+        //    url:'/contact',
+        //    templateUrl:'views/contact.html'
+        //})
         ;
     }]);

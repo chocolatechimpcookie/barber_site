@@ -1,16 +1,152 @@
+
+//dark orange #CA8037
+//font shadow #713415
+
+//small font inside #66362A
+
+//*
+//{
+//    font-family: didot, calibri;
+//}
+
+nav
+{
+    background-color: #CA8037 !important;
+    border-radius: 0px !important;
+    
+    .name_large
+    {
+        color:white;
+        text-shadow: 3px 3px 2px #713415;
+        font-size: 100px;
+        text-align: center;
+        font-family: didot, calibri;
+    }
+    
+    
+    
+    .name_small
+    {
+        color: #66362A;
+        text-shadow: 1px 1px 2px white;
+        font-size: 50px;
+        text-align:center;
+        font-family: didot, calibri;
+    }
+
+    
+    
+    .menu
+    {
+        //border: 2px solid black;
+        list-style-type: none;
+        //margin:0;
+        padding:0;
+       //setting center
+        width:99%;
+        margin-right:auto;
+        margin-left:auto;
+        text-align: center;
+        
+        font-family: arial;
+        
+        li
+        {
+            font-size: 30px;
+            //float:left;
+            display: inline-block;
+        }
+        
+        a 
+        {
+            display:block;
+            color:white;
+            text-decoration: none;
+
+            &:hover, &:visited, &:active, &:after
+            {
+                text-decoration: none;
+                cursor: pointer;
+            }
+            
+            
+        }
+    }
+    
+    
+
+}
+
+
+#ui-view
+{
+    h1
+    {
+        font-family: didot, calibri;
+    }
+    
+    
+    h2
+    {
+        font-family: arial;
+    }
+}
+
+
 #test2
 {
 
 }
 
-body
-{
-    background-image:url("../images/sampleimage.jpg");
-    //background-color:black;
-}
+//body
+//{
+//    background-image:url("../images/sampleimage.jpg");
+//    //background-color:black;
+//}
 
 body
 {
     //color:orange;
     
+}
+
+
+#store
+{
+ height: 450px;
+}
+
+//above are the general rules, underneath override for specific widths
+
+//smaller than xs
+@media only screen and (max-width:479px) and (min-width:0px)
+{
+
+
+}
+
+//only xs
+@media only screen and (max-width:767) and (min-width:480px)
+{
+
+}
+
+//768 and up small
+@media only and (min-width:768px)
+{
+
+}
+
+
+//768 and up, medium
+@media only screen and (min-width:992px)
+{
+
+}
+
+//large
+@media only screen and (min-width:1200px)
+{
+
+
 }
