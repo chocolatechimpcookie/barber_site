@@ -21,6 +21,8 @@ nav
         font-size: 100px;
         text-align: center;
         font-family: didot, calibri;
+        //margin-bottom: 5px !important;
+        margin-bottom: -7px;
     }
     
     
@@ -110,10 +112,18 @@ body
     
 }
 
+.haircut
+{
+        margin-right:auto;
+        margin-left:auto;
+        width:70%;
+}
+
 
 #store
 {
- height: 450px;
+ max-height: 450px;
+ max-width: 90%;
 }
 
 //above are the general rules, underneath override for specific widths

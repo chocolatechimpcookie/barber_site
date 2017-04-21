@@ -6,7 +6,7 @@ angular.module('barbersiteApp', ['ui.router'])
         .state(
         'home',
         {
-            url:'/about',
+            url:'/',
             templateUrl:'views/about.html'
         })
         
